@@ -1,1 +1,0 @@
-var script1=1;

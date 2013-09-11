@@ -1,6 +1,3 @@
-BASE_URL_API = 'http://ec2-54-242-121-70.compute-1.amazonaws.com/';
-
-
 function compressFile() {
     var formData = new FormData($('form')[0]);
     $.ajax({
@@ -8,7 +5,6 @@ function compressFile() {
         type: 'POST',
         //Ajax events$
         success: function(response) {
-            $('#result').html(response.text).show();
             $('#download').attr('href',BASE_URL_API+response.file).show();
         },
         // Form data
