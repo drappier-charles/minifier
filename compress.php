@@ -15,7 +15,7 @@
         $result['success'] = 0;
         $result['error'] = 'No Files!';
     }
-    
+    header("Access-Control-Allow-Origin: *");
     header('Content-type: application/json');
     echo json_encode($result);
 ?>
